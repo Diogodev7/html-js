@@ -1,9 +1,9 @@
 document.getElementById('form-inscrição').addEventListener('submit', function(event) {
    event.preventDefault(); // Evita o envio e do formulário e o carregamento da página
 
-   // Captura as idades do formulário
-   const idadeMaePAi = parseInt(event.target.idadeMaePai.value);
-   const idadeUsuario = parseInt(event.target.idadeUsuario.value);
+   // Captura as idades do formulário usando 'id' diretamente
+   const idadeMaePAi = parseInt(document.getElementById('idadeMaePai').value);
+   const idadeUsuario = parseInt((document.getElementById('idadeUsuario').value);
 
    // Seleciona as mensagens
    const successMessage = document.querySelector('.success-message');
